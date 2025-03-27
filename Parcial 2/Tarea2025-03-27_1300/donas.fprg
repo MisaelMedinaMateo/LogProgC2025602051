@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.18">
+    <function name="Main" type="None">
+        <parameters/>
+        <body>
+            <declare name="cantidad, precio, total" type="Real"/>
+            <assign precio="10.0"/>
+            <output expression='"Ingrese la cantidad de donas:"' newline="True"/>
+            <input variable="cantidad"/>
+            <if expression="cantidad >= 50">
+                <then>
+                    <assign precio="8.0"/>
+                </then>
+                <else>
+                    <if expression="cantidad >= 30">
+                        <then>
+                            <assign precio="9.0"/>
+                        </then>
+                    </if>
+                </else>
+            </if>
+            <assign total="cantidad * precio"/>
+            <output expression='"Total a pagar: $" + total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
