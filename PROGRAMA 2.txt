@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a=3, b=4,area;
+    float c,peri;
+
+    area=a*b/2;
+    c=sqrt(pow(a,2)+pow(b,2));
+    peri=a+b+c;
+
+    printf("area es igual a %d \n", area); 
+    printf("perimetro es igual a %.2f \n", peri); 
+    
+    return 0;
+}

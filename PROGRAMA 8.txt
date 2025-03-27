@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int horas_trabajadas;
+    float pago_por_hora = 100.0, salario_bruto, salario_neto, descuento;
+
+    // Solicitar al usuario las horas trabajadas
+    printf("Ingrese el número de horas trabajadas en la semana: ");
+    scanf("%d", &horas_trabajadas);
+
+    // Calcular el salario bruto
+    salario_bruto = horas_trabajadas * pago_por_hora;
+
+    // Aplicar descuento (ejemplo: 10% de impuestos)
+    descuento = salario_bruto * 0.10;
+    salario_neto = salario_bruto - descuento;
+
+    // Mostrar resultados
+    printf("\nSalario Bruto: $%.2f\n", salario_bruto);
+    printf("Descuento (10%%): $%.2f\n", descuento);
+    printf("Salario Neto: $%.2f\n", salario_neto);
+
+    return 0;
+}

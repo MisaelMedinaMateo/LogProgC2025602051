@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float DESC = 0.25;
+    int COUER = 300;
+    int numMuj = 0, numHom = 0;
+    float total = 0.0;
+
+    printf("Ingrese numero de mujeres: ");
+    scanf("%d", &numMuj);
+
+    printf("Ingrese numero de hombres: ");
+    scanf("%d", &numHom);
+
+    total = (numMuj * COUER * (1 - DESC)) + (numHom * COUER);
+    
+    printf("El total es: %.2f\n", total);
+
+    return 0;
+}
