@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <function name="Principal" type="Ninguno">
+        <parameters/>
+        <body>
+            <declare name="inicial, sexo" type="Cadena"/>
+            <output expression='"Ingrese la inicial de su nombre:"' newline="true"/>
+            <input variable="inicial"/>
+            <output expression='"Ingrese su sexo (M/F):"' newline="true"/>
+            <input variable="sexo"/>
+            <if expression='(sexo = "F" y inicial < "M") o (sexo = "M" y inicial > "N")'>
+                <then>
+                    <output expression='"Grupo A"' newline="true"/>
+                </then>
+                <else>
+                    <output expression='"Grupo B"' newline="true"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
