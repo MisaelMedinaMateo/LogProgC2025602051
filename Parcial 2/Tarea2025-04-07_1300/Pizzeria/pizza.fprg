@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.18">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcion, ingrediente" type="String" array="False" size=""/>
+            <output expression="&quot;¿Desea una pizza vegetariana? (si/no): &quot;" newline="False"/>
+            <input variable="opcion"/>
+            <if expression="opcion == &quot;si&quot;">
+                <then>
+                    <output expression="&quot;Ingredientes disponibles: Pimiento, Tofu&quot;" newline="True"/>
+                    <output expression="&quot;Elija un ingrediente: &quot;" newline="False"/>
+                    <input variable="ingrediente"/>
+                    <output expression="&quot;Pizza vegetariana con Mozzarella, Tomate y &quot; + ingrediente" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ingredientes disponibles: Peperoni, Jamón, Salmón&quot;" newline="True"/>
+                    <output expression="&quot;Elija un ingrediente: &quot;" newline="False"/>
+                    <input variable="ingrediente"/>
+                    <output expression="&quot;Pizza no vegetariana con Mozzarella, Tomate y &quot; + ingrediente" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
