@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Sucesion"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 06:58:07 p. m."/>
+        <attribute name="created" value="TUlTQUVMO01JU0FFTDEyOzIwMjUtMDQtMDc7MDY6NTQ6NDAgcC4gbS47MjQ1Ng=="/>
+        <attribute name="edited" value="TUlTQUVMO01JU0FFTDEyOzIwMjUtMDQtMDc7MDY6NTg6MDcgcC4gbS47MTsyNTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, contador" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+            <assign variable="contador" expression="2"/>
+            <while expression="contador &lt; 64">
+                <assign variable="c" expression="a + b"/>
+                <output expression="c" newline="True"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
