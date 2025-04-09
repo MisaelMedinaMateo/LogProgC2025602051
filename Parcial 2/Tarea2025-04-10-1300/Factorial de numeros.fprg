@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial de un n&#250;mero"/>
+        <attribute name="authors" value="Claude"/>
+        <attribute name="about" value="Programa para calcular el factorial de un n&#250;mero entero positivo"/>
+        <attribute name="saved" value="2025-04-07 06:41:04 p. m."/>
+        <attribute name="created" value="2025-04-07 10:00:00 AM"/>
+        <attribute name="edited" value="2025-04-07 10:00:00 AM"/>
+        <attribute name="edited" value="TUlTQUVMO01JU0FFTDEyOzIwMjUtMDQtMDc7MDY6NDE6MDQgcC4gbS47MTsyNTYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce un n&#250;mero entero no negativo: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n &lt; 0">
+                <then>
+                    <output expression="&quot;Error: No existe el factorial de n&#250;meros negativos&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="factorial" expression="1"/>
+                    <assign variable="i" expression="1"/>
+                    <while expression="i &lt;= n">
+                        <assign variable="factorial" expression="factorial * i"/>
+                        <assign variable="i" expression="i + 1"/>
+                    </while>
+                    <output expression="&quot;El factorial de &quot; &amp; n &amp; &quot; es: &quot; &amp; factorial" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
